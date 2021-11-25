@@ -19,7 +19,7 @@ addToLeaderBoardToDom(leaderBoard)
 
 function pickSecretNumber() {
     secretNumber = Math.floor(Math.random() * maxNumber)
-    console.log(`the secret number is ${secretNumber}`)
+    // console.log(`the secret number is ${secretNumber}`)
 }
 
 function titleScreen(){
@@ -37,7 +37,7 @@ function titleScreen(){
 function startScreen() {
     dom.innerHTML = ""
     const title = document.createElement("h2")
-    title.innerHTML = "Welcome by Guess The Number "
+    title.innerHTML = "Welcome to Guess The Number "
     const inputLabel = document.createElement("label")
     inputLabel.innerHTML = "please enter your name:"
     inputLabel.for = "name"
@@ -169,15 +169,14 @@ function addToLeaderBoard(score){
     const newObject = {name: `${player}`, score: `${score}`}
     leaderBoard.push(newObject)
     addToLeaderBoardToDom(leaderBoard)
-    console.log(leaderBoard)
+    // console.log(leaderBoard)
 }
 
 function addToLeaderBoardToDom(leaderBoard){
     scoreBoard.innerHTML = ""
     const title = document.createElement("h2")
     title.innerHTML = "Score Board"
-    // scoreBoard.appendChild(title)
-    sortedLeaderBoard = leaderBoard.sort((a, b) => b.score - a.score)
+   sortedLeaderBoard = leaderBoard.sort((a, b) => b.score - a.score)
     if (sortedLeaderBoard.length > 0)
                 scoreBoard.appendChild(title)
                 sortedLeaderBoard.map(object => {
