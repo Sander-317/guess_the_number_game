@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
+/* font-family: 'Comforter', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+/* font-family: 'Shadows Into Light', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+ /* font-family: 'Indie Flower', cursive; */
+
+
+body {
+    background-color: greenyellow;
+    text-align: center;
+    font-family: 'Comforter', cursive;
+    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Indie Flower', cursive;
+    padding-top: 20%;
+    
+}
+
+label {
+    margin: 5px;
+}
+
+input {
+    margin: 1px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ol {
+    max-width: 50%;
+    margin: auto;
+
+}
+
+li {
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 80%;
+}
